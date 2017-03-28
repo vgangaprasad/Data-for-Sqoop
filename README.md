@@ -1,3 +1,3 @@
 # Data-for-Sqoop
 # Hi All,
-# Created this repository for storing copies of the table/data with instructions for using it for learning Sqoop
+# Created this repository for storing copies of table/data with instructions for learning Sqoop
