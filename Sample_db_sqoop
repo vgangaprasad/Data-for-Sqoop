@@ -1,0 +1,24 @@
+I am using Cloudera for running Sqoop so the instructions are related to that:
+
+Download test_db from https://github.com/datacharmer/test_db using the "Clone or Download" option
+unzip the downloaded file (test_db-master.zip)
+
+
+Login to cloudera
+cd to the unzipped folder
+
+type  mysql -u root -pcloudera -t <employees.sql
+
+you will see info about tables getting loaded, once the installation is complete, enter "show Databases;"
+
+you should see "employees" database now. Enter "use employees" to select the employees Database
+
+After that enter "show tables;" ==> this will list all the tables under employees database
+
+Now you can use these tables to load into HDFS using SQOOP
+
+I also loaded another database named sakila using the following commands
+
+type  mysql -u root -pcloudera -t <sakila-mv-schema.sql
+ followed by
+type  mysql -u root -pcloudera -t <sakila-mv-data.sql
